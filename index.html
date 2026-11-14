@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林會芳 - 個人履歷網站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. 導覽列與頁內錨點連結 -->
+    <nav class="navbar">
+        <div class="nav-brand">林會芳</div>
+        <ul class="nav-links">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- 2. 頁首：個人照片、姓名、標語 -->
+    <header class="hero-header">
+        <div class="header-container">
+            <img src="image/profile.jpg" alt="個人大頭照" class="profile-img">
+            <div class="header-text">
+                <h1>林會芳</h1>
+                <p class="slogan">「在試錯中學習，在實作中成長。」</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. 主要內容區（左側欄 + 右側主內容） -->
+    <div class="main-wrapper">
+        
+        <!-- 左側邊欄：基本資料與社群 -->
+        <aside class="sidebar">
+            <h3>個人基本資料</h3>
+            <ul class="info-list">
+                <li><strong>學校科系：</strong>中原大學 資訊管理學系</li>
+                <li><strong>生日：</strong>2006 / 10 / 09</li>
+                <li><strong>居住地：</strong>桃園市中壢區</li>
+                <li><strong>個性：</strong>隨和真誠、冷靜務實、對感興趣的事物充滿熱情</li>
+                <li><strong>個人特質：</strong>好奇心強、觀察力敏銳、喜歡把複雜的事情整理得有條理</li>
+                <li><strong>優點：</strong>細心負責、執行力強、善於拆解問題並主動尋找解方</li>
+                <li><strong>缺點：</strong>有時過於追求細節而花較多時間，目前透過設定階段性死線來提升效率</li>
+                <li><strong>興趣：</strong>慢跑、旅遊規劃、城市漫步、品嘗美食與茶飲</li>
+            </ul>
+
+            <hr class="divider">
+
+            <h3>社群連結</h3>
+            <div class="social-links">
+                <a href="https://github.com/" target="_blank" class="social-btn">GitHub</a>
+                <a href="https://www.instagram.com/" target="_blank" class="social-btn">Instagram</a>
+                <a href="https://www.facebook.com/" target="_blank" class="social-btn">Facebook</a>
+            </div>
+        </aside>
+
+        <!-- 右側主區塊 -->
+        <main class="content-area">
+
+            <!-- 區塊 A：關於我 / 自我介紹 -->
+            <section id="about" class="card-section">
+                <h2>關於我 / 自我介紹</h2>
+                <p>
+                    你好！我是目前就讀於中原大學資訊管理學系的林會芳。在學期間我培養了程式邏輯與系統分析的能力，同時對前端網頁視覺設計充滿熱情。我的優點是執行力強、善於溝通協調；面對不熟悉的技術時，習慣先拆解問題再逐步尋找解決方案。希望透過這份履歷展現我在大學期間的學習成果與專案實作經驗。
+                </p>
+            </section>
+
+            <!-- 區塊 B：專業技能（至少 5 項，純 CSS 視覺化） -->
+            <section id="skills" class="card-section">
+                <h2>專業技能</h2>
+                <div class="skills-grid">
+                    
+                    <div class="skill-item">
+                        <p class="skill-title">HTML5 / CSS3 網頁排版 (85%)</p>
+                        <div class="progress-bg">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+            
+                    <div class="skill-item">
+                        <p class="skill-title">Java 物件導向程式設計 (70%)</p>
+                        <div class="progress-bg">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                    </div>
+            
+                    <div class="skill-item">
+                        <p class="skill-title">資料結構與演算法基礎 (70%)</p>
+                        <div class="progress-bg">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                    </div>
+            
+                    <div class="skill-item">
+                        <p class="skill-title">簡報製作與專案企劃 (90%)</p>
+                        <div class="progress-bg">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+            
+                    <div class="skill-item">
+                        <p class="skill-title">英文能力 (70%)</p>
+                        <div class="progress-bg">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                    </div>
+            
+                </div>
+            </section>
+
+            <!-- 區塊 C：學經歷與專案（3 個橫向長方形卡片，由上往下排列） -->
+            <section id="experience" class="card-section">
+                <h2>學經歷與專案</h2>
+                <div class="exp-list-vertical">
+                    
+                    <!-- 經歷 1：點擊按鈕觀看志工服務影片 -->
+                    <article class="exp-card">
+                        <div class="exp-info">
+                            <h4>管理學服務學習｜動物之家志工服務</h4>
+                            <p>
+                                參與管理學課程服務學習，前往新北市五股動物之家執行第一線志工任務。服務期間負責犬舍與活動場地的日常清潔消毒，並透過牽繩散步、零食互動與基本指令練習協助犬隻社會化，重建對人類的信任以提升認養契機。此次行動不僅實踐 SDGs 11 與 15 的友善共好理念，更讓我體會將同理心轉化為實際管理與社會倡議的責任。
+                            </p>
+                            <a href="video/ex1.mp4" target="_blank" class="evidence-link">🎬 點擊觀看志工服務影片 →</a>
+                        </div>
+                    </article>
+
+                    <!-- 經歷 2：點擊按鈕檢視專案新聞稿圖片 -->
+                    <article class="exp-card">
+                        <div class="exp-info">
+                            <h4>企業概論專案｜擔任人事長：團隊溝通與會議控管</h4>
+                            <p>
+                                在企業概論專案中擔任人事長，主要負責管理組員出缺席狀況、撰寫每次小組會議紀錄並追蹤討論決議，確保團隊溝通透明且進度不落後。專案期間與組員共同完成商品定位、消費者分析與 SWOT 評估，並參與設計宣傳海報（含 QR Code 報名動線）、LINE 關鍵字引導與新聞稿撰寫，透過數據檢討廣宣成效，培養了細心負責的行政控管與跨組協調能力。
+                            </p>
+                            <a href="image/news.jpg" target="_blank" class="evidence-link">🖼️ 點擊檢視專案新聞稿圖片 →</a>
+                        </div>
+                    </article>
+
+                    <!-- 經歷 3：PDF 雲端連結佐證 -->
+                    <article class="exp-card">
+                        <div class="exp-info">
+                            <h4>企業資料通訊｜解碼我的網路生活：運用實測數據與 AI 輔助分析網路服務品質</h4>
+                            <p>
+                                針對學生宿舍夜間網路卡頓問題，規劃連續三日多時段科學量測。運用 Speedtest 與 CMD 終端機執行 ICMP Ping 指令，蒐集下載頻寬、往返延遲（RTT）及丟包率數據，並繪製趨勢統計圖表。結合生成式 AI 深入剖析實體層同頻干擾與傳輸層擁塞瓶頸，最終提出切換 5GHz 固定信道與 QoS 流量優化方案，展現數據分析與網路除錯實戰力。
+                            </p>
+                            <a href="https://drive.google.com/drive/folders/1VH3793NmoIt4PcvTRcCe8SxZ-Ym0MShX?usp=sharing" target="_blank" class="evidence-link">📄 查看文件 PDF →</a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- 區塊 D：聯絡資訊（包含 Email 發信功能） -->
+            <section id="contact" class="card-section">
+                <h2>聯絡資訊</h2>
+                <p>歡迎透過以下方式與我聯繫，或直接點擊按鈕發送電子郵件給我！</p>
+                <div class="contact-actions">
+                    <a href="mailto:yourname@example.com" class="email-btn">發送 Email 給我</a>
+                    <span>信箱：a0938622853@gmail.com</span>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- 4. 頁尾 -->
+    <footer class="site-footer">
+        <p>Copyright © 2026 個人履歷網頁 | Designed by 林會芳</p>
+    </footer>
+
+</body>
+</html>
